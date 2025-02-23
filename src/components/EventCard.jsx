@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const EventCard = ({ event }) => (
   <motion.div
     className="md:max-w-sm w-72 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
@@ -28,6 +28,7 @@ const EventCard = ({ event }) => (
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
         Date: {event.date}
       </p>
+      <Link to={`/event/${event.id}`}>
       <a
         href={`/${event.id}`}
         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-transparent bg-[#ffffff] rounded-lg"
@@ -49,6 +50,8 @@ const EventCard = ({ event }) => (
           />
         </svg>
       </a>
+      </Link>
+      
     </div>
   </motion.div>
 );
