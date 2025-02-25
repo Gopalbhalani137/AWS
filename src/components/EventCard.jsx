@@ -54,3 +54,70 @@ const EventCard = ({ event }) => (
 );
 
 export default EventCard;
+
+
+// import React from 'react';
+// import { motion } from 'framer-motion';
+
+// const EventCard = ({ event }) => (
+//   <motion.div
+//     className="md:max-w-sm w-72 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden cursor-pointer transition-transform duration-500 hover:translate-y-5 hover:shadow-lg"
+//     whileHover={{ scale: 1.05 }}
+//   >
+//     <div className="relative">
+//       <img
+//         src={event.photo}
+//         alt={`Event by ${event.chiefGuest}`}
+//         className="w-full h-64 object-cover rounded-t-lg transition-opacity duration-500 hover:opacity-50"
+//       />
+//       <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 flex items-end p-5 transition-opacity duration-500">
+//         <div className="text-white">
+//           <h5 className="text-2xl font-bold">{event.chiefGuest}</h5>
+//           <p className="text-sm mt-2">{event.description}</p>
+//           <p className="text-sm mt-2">Date: {event.date}</p>
+//           <a
+//             href={`/${event.id}`}
+//             className="mt-4 inline-block px-4 py-2 text-sm font-medium bg-white text-black rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300"
+//           >
+//             Read more
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   </motion.div>
+// );
+
+// export default EventCard;
+
+// import React from 'react';
+// import { motion } from 'framer-motion';
+
+// const EventCard = ({ event }) => (
+//   <motion.div
+//     className="md:max-w-sm w-72 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden cursor-pointer transition-transform duration-500 hover:translate-y-5 hover:shadow-lg"
+//     whileHover={{ scale: 1.05 }}
+//   >
+//     <div className="relative">
+//       <img
+//         src={event.photo}
+//         alt={`Event by ${event.chiefGuest}`}
+//         className="w-full h-64 object-cover rounded-t-lg transition-opacity duration-500 hover:opacity-50"
+//       />
+//       <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 flex items-end p-5 transition-opacity duration-500">
+//         <div className="text-white">
+//           <h5 className="text-2xl font-bold">{event.chiefGuest}</h5>
+//           <p className="text-sm mt-2 line-clamp-3">{event.description}</p>
+//           <p className="text-sm mt-2">Date: {event.date}</p>
+//           <a
+//             href={`/${event.id}`}
+//             className="mt-4 inline-block px-4 py-2 text-sm font-medium bg-white text-black rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300"
+//           >
+//             Read more
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   </motion.div>
+// );
+
+// export default EventCard;
