@@ -23,7 +23,7 @@ const eventsData = [
 
 const Events = () => {
   return (
-    <div className="events-container bg-[#040e15] text-white flex flex-col items-center py-8 md:pt-24 pt-36">
+    <div id="events-section" className="events-container bg-[#040e15] text-white flex flex-col items-center py-8 md:pt-24 pt-36">
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -1,11 +1,11 @@
 import React from 'react';
-import FloatingDots from '../Utils/FloatingDots';
+// import FloatingDots from '../Utils/FloatingDots';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from 'framer-motion';
 
 function Hero_sec() {
   return (
-    <section className="relative w-full h-screen z-2 md:z-4">
+    <section id="hero-section" className="relative w-full h-screen z-2 md:z-4">
       <Parallax translateY={[-32, 32]}>
         <div
           className="w-full h-screen bg-cover bg-no-repeat"
@@ -17,7 +17,7 @@ function Hero_sec() {
         />
       </Parallax>
 
-      <FloatingDots />
+      {/* <FloatingDots /> */}
 
       <img
         src="img1.png"

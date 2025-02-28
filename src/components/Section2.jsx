@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Section2() {
   return (
-    <section className="relative w-full h-screen bg-[#040e15] z-2 flex items-center justify-center">
+    <section id="section-2" className="relative w-full h-screen bg-[#040e15] z-2 flex items-center justify-center">
       <Parallax translateY={[-10, 10]}>
         <div className="flex flex-col gap-6 items-center text-center md:pt-48 md:p-28">
           <motion.h2

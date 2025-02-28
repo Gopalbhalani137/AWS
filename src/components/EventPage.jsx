@@ -20,12 +20,12 @@ const EventPage = ({event}) => {
           to="/events" 
           className="inline-flex items-center text-cyan-200 hover:text-white transition-all duration-300 group mb-8"
         > */}
+          <Link to="/">
         <div className='flex flex-row items-center md:pt-8 transition-all duration-300 group mb-8'>
           <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform duration-300 " />
-          <Link to="/">
           <span>Back to Events</span>
-          </Link>
         </div>
+          </Link>
         {/* </Link> */}
         {/* Main content card */}
         <div className="bg-gradient-to-b from-[#1a1f2e]/80 to-[#161e2d]/90 backdrop-blur-md rounded-2xl shadow-2xl border border-white/5 mt-10">
