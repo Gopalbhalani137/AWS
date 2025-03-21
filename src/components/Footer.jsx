@@ -39,12 +39,12 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-1 lg:col-span-1">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-white">
-                <span className="text-blue-400">Tech</span>Club
+                <span className="text-blue-400">Cloud</span>Club
               </h2>
             </div>
             <p className="text-blue-100 text-sm mb-6 leading-relaxed">
-              Join our vibrant community of tech enthusiasts, developers, and innovators. 
-              We host events, hackathons, and workshops to help you grow your skills.
+              Join our vibrant community of Cloud enthusiasts, developers, and innovators. 
+              We host events, and workshops to help you grow your skills.
             </p>
             
             {/* Social Media Links */}
@@ -84,40 +84,42 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="col-span-1">
             <h3 className="text-lg font-semibold text-white mb-5">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Events', 'Projects', 'Team', 'Blogs'].map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={`#${link.toLowerCase().replace(' ', '-')}`} 
-                    className="text-blue-100 hover:text-blue-400 transition-colors duration-300 flex items-center text-sm"
-                  >
-                    <svg className="w-3 h-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
+  {['Home', 'About Us', 'Events', 'Projects', 'Team', 'Blogs'].map((link, index) => (
+    <li key={index}>
+      <a 
+        href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} 
+        className="text-blue-100 hover:text-blue-400 transition-colors duration-300 flex items-center text-sm"
+      >
+        <svg className="w-3 h-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+        {link}
+      </a>
+    </li>
+  ))}
+</ul>
+
           </motion.div>
 
           {/* Resources */}
           <motion.div variants={itemVariants} className="col-span-1">
             <h3 className="text-lg font-semibold text-white mb-5">Resources</h3>
             <ul className="space-y-2">
-              {['Hackathons', 'Tutorials', 'Documentation', 'FAQ', 'Community', 'Support'].map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={`#${link.toLowerCase()}`} 
-                    className="text-blue-100 hover:text-blue-400 transition-colors duration-300 flex items-center text-sm"
-                  >
-                    <svg className="w-3 h-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
+  {['Hackathons', 'Tutorials', 'Documentation', 'FAQ', 'Community', 'Support'].map((link, index) => (
+    <li key={index}>
+      <a 
+        href={`#${link.toLowerCase()}`} 
+        className="text-blue-100 hover:text-blue-400 transition-colors duration-300 flex items-center text-sm"
+      >
+        <svg className="w-3 h-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+        {link}
+      </a>
+    </li>
+  ))}
+</ul>
+
           </motion.div>
 
           {/* Newsletter */}

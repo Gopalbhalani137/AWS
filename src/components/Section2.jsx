@@ -18,7 +18,7 @@ export default function Section2() {
             }}
             className="text-2xl md:text-6xl font-bold bg-gradient-to-r from-cyan-200 bg-[#78D3E3] text-transparent bg-clip-text pt-12 md:pb-10"
           >
-            What is AWS Cloud Club Adani?
+            Aim of Cloud Club
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
